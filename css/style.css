@@ -1,9 +1,9 @@
 /*
-Police du texte : font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+Police        : font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 
-Titres (vert) :    #b5e853;
-Liens (Bleu) :     #63c0f5;
-Texte (Blanc) :    #eaeaea;
+Titres (Vert) : #b5e853;
+Liens (Bleu)  : #63c0f5;
+Texte (Blanc) : #eaeaea;
 */
 
 
@@ -15,72 +15,97 @@ body {
     font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
-
-
 h1 {
     color: #b5e853;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
-}
+} /* Titre */
 
-
+h2, h3 {
+    color: #b5e853;
+    margin: 0px;
+} /* Sous-titres */
 
 p {
-    color: #eaeaea;
     font-size: 16px;
-}
-
-
+    font-weight: bold;
+    color: #eaeaea;
+    margin: 0px;
+} /* Texte */
 
 a {
+    padding: 12px;
     color: #63c0f5;
     font-size: 30px;;
-}
+    font-weight: bold;
+    margin-top: 20px;
+} /* Liens */
 
-
+li {
+    font-size: 16px;
+    color: #eaeaea;
+    list-style-image: url(../images/list-style.png);
+    font-weight: bold;
+} /* Listes */
 
 hr {
     border: 0;
     border-bottom: 1px dashed #b5e853;
-}
+} /* Divider */
+
+.coor {
+    color:  #eaeaea;
+} /* Couleurs coordonnées */
+
+
+
+/***************************************************************************************************************/
+
 
 
 
 #header {
     background-color: black;
-    height: 50px;
+    height: 100px;
     border-bottom: 1px dashed #b5e853;
-    padding-top: 7px;
     display: flex;
     justify-content: space-between;
-}
+} /* Partie en haut */
 
+nav {
+    padding-top: 30px;
+} /* Navbar */
 
+#links a:nth-child(n) {
+    border-style: outset;
+    border-radius: 30%;
+    margin-left: 20px;
+} /* Boutons de la navbar */
 
-#links {
-    padding-left: 50px;
-}
-
-
+#links a:nth-child(n):hover, a:nth-child(n):active {
+    color: red;
+    border-style: outset;
+    border-radius: 30%;
+} /* Boutons de la navbar losqu'on passe la souris dessus */
 
 #reseaux {
-    padding-right: 50px;
-}
+    margin-right: 50px;
+} /* Réseaux */
+
+#reseaux a:nth-child(n) {
+    margin-right: 20px;
+} /* lien des réseaux sociaux */
 
 #reseaux a:nth-child(1) {
     color: gainsboro;
-    padding-right: 50px;
-}
+} /* Linkedin */
 
 #reseaux a:nth-child(2) {
     color: rosybrown;
-    padding-right: 50px;
-}
-
-
+} /* GitHub */
 
 #container {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
-}
+} /* corps de la page */

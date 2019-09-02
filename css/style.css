@@ -1,0 +1,86 @@
+/*
+Police du texte : font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+
+Titres (vert) :    #b5e853;
+Liens (Bleu) :     #63c0f5;
+Texte (Blanc) :    #eaeaea;
+*/
+
+
+
+body {
+    margin: 0;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+}
+
+
+
+h1 {
+    color: #b5e853;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+p {
+    color: #eaeaea;
+    font-size: 16px;
+}
+
+
+
+a {
+    color: #63c0f5;
+    font-size: 30px;;
+}
+
+
+
+hr {
+    border: 0;
+    border-bottom: 1px dashed #b5e853;
+}
+
+
+
+#header {
+    background-color: black;
+    height: 50px;
+    border-bottom: 1px dashed #b5e853;
+    padding-top: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#links {
+    padding-left: 50px;
+}
+
+
+
+#reseaux {
+    padding-right: 50px;
+}
+
+#reseaux a:nth-child(1) {
+    color: gainsboro;
+    padding-right: 50px;
+}
+
+#reseaux a:nth-child(2) {
+    color: rosybrown;
+    padding-right: 50px;
+}
+
+
+
+#container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}

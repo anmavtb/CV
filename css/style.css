@@ -64,48 +64,97 @@ hr {
 
 
 
-#header {
-    background-color: black;
-    height: 100px;
+.header {
+    background-color: #000;
+    height: 80px;
+    width: 100%;
     border-bottom: 1px dashed #b5e853;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
 } /* Partie en haut */
 
 nav {
-    padding-top: 30px;
+    padding-top: 10px;
 } /* Navbar */
 
-#links a:nth-child(n) {
-    border-style: outset;
-    border-radius: 30%;
+.links {
     margin-left: 20px;
-} /* Boutons de la navbar */
+} /* Liens de pages */
 
-#links a:nth-child(n):hover, a:nth-child(n):active {
-    color: red;
-    border-style: outset;
-    border-radius: 30%;
-} /* Boutons de la navbar losqu'on passe la souris dessus */
+.btn {
+    padding: 8px 18px;
+	margin: 0px 10px;
+	display: inline-block;
+    background: -webkit-linear-gradient(top, rgba(40,40,40,0.3), rgba(35,35,35,0.3) 50%, rgba(10,10,10,0.3) 50%, rgba(0,0,0,0.3));
+    border-radius: 50px;
+    border: 2px solid rgba(50,50,50,50.7);
+    border-bottom: 2px solid rgba(50,50,50,50.7);
+    border-top: 2px solid rgba(50,50,50,50.7);
+    padding-bottom: 12px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.75);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+} /* Boutons de droite */
 
-#reseaux {
+.btn:hover {
+    background: -webkit-linear-gradient(top, rgba(40,40,40,0.6), rgba(35,35,35,0.6) 50%, rgba(10,10,10,0.8) 50%, rgba(0,0,0,0.8));
+} /* Boutons de droite lorsque survolés */
+
+.reseaux {
     margin-right: 50px;
+    margin-bottom: 30px;
 } /* Réseaux */
 
-#reseaux a:nth-child(n) {
+.reseaux a:nth-child(n) {
     margin-right: 20px;
 } /* lien des réseaux sociaux */
 
-#reseaux a:nth-child(1) {
-    color: gainsboro;
+.reseaux a:nth-child(1) {
+    color: #0077b5;
+    font-size: 50px;
 } /* Linkedin */
 
-#reseaux a:nth-child(2) {
-    color: rosybrown;
+.reseaux a:hover {
+    opacity: 0.6;
+} /* Réseaux lorsque survolés */
+
+.reseaux a:nth-child(2) {
+    color: white;
+    font-size: 50px;
 } /* GitHub */
 
-#container {
+.container {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
 } /* corps de la page */
+
+/***************************************************************************************************************/
+
+.projets {
+    display: flex;
+    justify-content: space-between;
+}
+
+#titreArtden {
+    display: flex;
+    justify-content: center;
+}
+
+#titreRaindrop {
+    display: flex;
+    justify-content: center;
+}
+
+#artden {
+    border: 3px solid black;
+    width: 400px;
+} /* Image ArtDen */
+
+#raindrop {
+    border: 3px solid black;
+    width: 400px;
+} /* Image RainDrop Clicker */

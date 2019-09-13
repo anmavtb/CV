@@ -134,27 +134,25 @@ nav {
 
 /***************************************************************************************************************/
 
-.projets {
+#projetsAll {
     display: flex;
     justify-content: space-between;
 }
 
-#titreArtden {
+.projet {
+    text-decoration: none;
+}
+
+.titreImage {
     display: flex;
     justify-content: center;
 }
 
-#titreRaindrop {
-    display: flex;
-    justify-content: center;
+.projetImage {
+    border: 3px solid black;
+    width: 400px;
 }
 
-#artden {
-    border: 3px solid black;
-    width: 400px;
-} /* Image ArtDen */
-
-#raindrop {
-    border: 3px solid black;
-    width: 400px;
-} /* Image RainDrop Clicker */
+.projetImage:hover {
+    border: 3px solid white;
+}

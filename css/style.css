@@ -131,13 +131,25 @@ nav {
     margin: 0 auto;
 } /* Corps de la page */
 
-.logoEntreprise {
-    height: 50px;
+.logo {
+    height: 55px;
 } /* Logo des entreprises */
 
 .texte {
     display: inline-block;
     margin-bottom: 15px;
+}
+
+.competences {
+    display: inline-block;
+}
+
+#part1 {
+    margin-right: 45%;
+}
+
+#contact {
+    color: greenyellow;
 }
 
 /***************************************************************************************************************/

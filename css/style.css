@@ -74,7 +74,8 @@ header {
     border-bottom: 1px dashed #b5e853;
     position: fixed;
     z-index: 1000;
-    align-content: center;
+    display: flex;
+    justify-content: space-between;
 } /* Partie en haut */
 
 .btn {
@@ -86,11 +87,21 @@ header {
     text-decoration: none;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.75);
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+    padding: 10px;
+    margin-left: 20px;
 } /* Boutons de droite */
 
 .btn:hover {
     background: -webkit-linear-gradient(top, rgba(40,40,40,0.6), rgba(35,35,35,0.6) 50%, rgba(10,10,10,0.8) 50%, rgba(0,0,0,0.8));
 } /* Boutons de droite lorsque survolés */
+
+.links {
+    margin-top: 13px;
+} /* Boutons */
+
+.reseaux a:nth-child(n) {
+    margin-right: 20px;
+} /* Réseaux */
 
 .reseaux a:nth-child(1) {
     color: #eaeaea;
@@ -116,15 +127,11 @@ main {
     width: 100%;
     text-align: center;
     border-collapse: collapse;
-}
+} /* Tableau des compétances */
 
 .gridTable thead th {
     margin-top: 10px;
     text-align: center;
-}
-
-.gridTable thead th {
-    margin-top: 10px;
     border: 4px solid #B5E853;
 }
 

@@ -3,4 +3,4 @@
 ## Lien du Site
 Update: 06/10/2019
 
-[Link](https://VincentGuiraudou.github.io/VincentGuiraudou.cv.github.io/)
+[Link](https://VincentGuiraudou.github.io/CV/)

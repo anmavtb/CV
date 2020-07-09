@@ -2,7 +2,7 @@
 Police        : font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 
 Titres (Vert) : #b5e853;
-Liens (Bleu)  : #63c0f5;
+Liens projets (Bleu)  : #63c0f5;
 Texte (Blanc) : #eaeaea;
 */
 
@@ -156,23 +156,32 @@ main {
 
 #projetsAll {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .projet {
     text-decoration: none;
+    margin-top: 50px;
 }
 
 .titreImage {
     display: flex;
     justify-content: center;
+    color: #B5E853;
 }
 
 .projetImage {
-    border: 3px solid black;
-    width: 400px;
+    border: 3px solid #B5E853;
+    width: 300px;
 }
 
 .projetImage:hover {
-    border: 3px solid white;
+    border: 3px solid #63c0f5;
+}
+
+.projetTexte {
+    width: 300px;
+    text-align: center;
+    color: #eaeaea;
 }

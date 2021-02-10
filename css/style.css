@@ -6,65 +6,50 @@ Liens projets (Bleu)  : #63c0f5;
 Texte (Blanc) : #eaeaea;
 */
 
-
-
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
+    display: flex;
     background-image: url(../images/background.png);
     background-size: cover;
-    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    font-family: "Lucida Console", Terminal, monospace;
+}
+
+h1, h2, h3, table th {
+    color: #b5e853;
 }
 
 h1 {
-    color: #b5e853;
+    text-align: center;
     font-size: 50px;
     font-weight: bold;
-} /* Titre */
+    margin-bottom: 50px;
+}
 
-h2, h3 {
-    color: #b5e853;
-} /* Sous-titres */
+h2 {
+    margin-bottom: 10px;
+}
 
-p {
+h3 {
+    margin-top: 10px;
+}
+
+p, a, li {
     font-size: 16px;
     font-weight: bold;
-    color: #eaeaea;
-} /* Texte */
-
-a {
-    color: #eaeaea;
-    font-size: 16px;;
-    font-weight: bold;
-} /* Liens */
-
-li {
-    font-size: 16px;
     color: #eaeaea;
     list-style-image: url(../images/list-style.png);
-    font-weight: bold;
-} /* Listes */
+}
 
-hr {
-    border: 0;
-    border-bottom: 1px dashed #b5e853;
-} /* Divider */
+li {
+    margin-left: 25px;
+}
 
-.coor {
-    color:  #eaeaea;
-} /* Couleurs coordonnées */
-
-
-
-/***************************************************************************************************************/
-
-
-
-body {
-    display: flex;
+li>h2 {
+    margin-top: 50px;
 }
 
 header {
@@ -73,115 +58,110 @@ header {
     width: 100%;
     border-bottom: 1px dashed #b5e853;
     position: fixed;
-    z-index: 1000;
+}
+
+header nav {
     display: flex;
     justify-content: space-between;
-} /* Partie en haut */
+}
 
-.btn {
-    background: -webkit-linear-gradient(top, rgba(40,40,40,0.3), rgba(35,35,35,0.3) 50%, rgba(10,10,10,0.3) 50%, rgba(0,0,0,0.3));
-    border-radius: 50px;
-    border: 2px solid rgba(50,50,50,50.7);
-    border-bottom: 2px solid rgba(50,50,50,50.7);
-    border-top: 2px solid rgba(50,50,50,50.7);
-    text-decoration: none;
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.75);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
-    padding: 10px;
-    margin-left: 20px;
-} /* Boutons de droite */
-
-.btn:hover {
-    background: -webkit-linear-gradient(top, rgba(40,40,40,0.6), rgba(35,35,35,0.6) 50%, rgba(10,10,10,0.8) 50%, rgba(0,0,0,0.8));
-} /* Boutons de droite lorsque survolés */
-
-.links {
+#liens {
     margin-top: 13px;
-} /* Boutons */
+}
 
-.reseaux a:nth-child(n) {
+#liens a {
+        background: linear-gradient(rgba(40,40,40,0.9), rgba(10,10,10,0.7));
+        border-radius: 50px;
+        border: 2px solid rgba(50,50,50,1);
+        text-decoration: none;
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.75);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        padding: 10px;
+        margin-left: 20px;
+}
+
+#liens a:hover {
+    background: linear-gradient(rgba(50,50,50,1), rgba(20,20,20,0.8));
+}
+
+#reseaux a {
+    color: #eaeaea;
+    font-size: 40px;
     margin-right: 20px;
-} /* Réseaux */
+}
 
-.reseaux a:nth-child(1) {
-    color: #eaeaea;
-    font-size: 40px;
-} /* Linkedin */
-
-.reseaux a:nth-child(2) {
-    color: #eaeaea;
-    font-size: 40px;
-} /* GitHub */
-
-.reseaux a:hover {
+#reseaux a:hover {
     opacity: 0.6;
-} /* Réseaux lorsque survolés */
+}
 
 main {
     width: 90%;
     max-width: 1000px;
-    margin: 0 auto;
-} /* Corps de la page */
+    padding-top: 60px;
+    margin: auto;
+}
 
-.gridTable {
+table {
     width: 100%;
     text-align: center;
     border-collapse: collapse;
-} /* Tableau des compétances */
+}
 
-.gridTable thead th {
-    margin-top: 10px;
+table th, table td {
+    padding: 10px 0px;
     text-align: center;
+    border-left: 4px solid #B5E853;
+    border-right: 4px solid #B5E853;
+}
+
+table th {
+    margin-top: 10px;
     border: 4px solid #B5E853;
 }
 
-.gridTable td:nth-child(even) {
-    text-align: center;
-    border-left: 4px solid #B5E853;
+table tr:last-child {
+    border-bottom: 4px solid #B5E853;
 }
 
-.gridTable td, .gridTable th {
-    padding: 10px 0px;
-}
-
-.logo {
+img {
     height: 55px;
-} /* Logo des entreprises */
+}
 
+#formations li {
+    list-style: none;
+    margin-bottom: 50px;
+    width: auto;
+}
 
+#formations img {
+    float: left;
+    height: 75px;
+    margin-right: 10px;
+}
 
-/***************************************************************************************************************/
+#projets {
+    max-width: 1500px;
+}
 
-
-
-#projetsAll {
+#projets div {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.projet {
-    text-decoration: none;
-    margin-top: 50px;
+#projets div img {
+    padding: 5px;
+    height: 300px;
+    border: 4px solid #B5E853;
+    border-radius: 10%;
 }
 
-.titreImage {
-    display: flex;
-    justify-content: center;
-    color: #B5E853;
+#projets div img:hover {
+    border: 4px solid #63c0f5;
 }
 
-.projetImage {
-    border: 3px solid #B5E853;
-    width: 300px;
-}
-
-.projetImage:hover {
-    border: 3px solid #63c0f5;
-}
-
-.projetTexte {
+#projets div figcaption, #projets a {
     width: 300px;
     text-align: center;
-    color: #eaeaea;
+    text-decoration: none;
 }
